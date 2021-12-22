@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root {
+        --backgroundcolor: #202124;
+    }
+    * {
+        margin:0;
+        padding: 0;
+
+    }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #202124;
+    }
+    .section-navbar {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        margin-top: 16px;
+        margin-right: 22px;
+    }
+    .navbar {
+        display: flex;
+        vertical-align: center;
+        align-items: center;
+    }
+    .navbar a {
+        margin-right: 14px;
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+    }
+    .navbar button {
+        margin-right: 16px;
+        margin-left: 9px;
+        height: 20px;
+        border: 1px solid #202124;
+        border-radius: 50%;
+        border-color: #202124;
+        cursor: pointer;
+    }
+    .navbar button figure {
+        margin: 0;
+        padding: 0;
+    }
+    .navbar button img{
+        height: 20px;
+    }
+
+    #profile-picture {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .search-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .search-logo figure img {
+         height: 200px;
+         width: 500px;
+    }
+
+    .search {
+        margin-top: 24px;
+        width: 580px;
+        height: 44px;
+        border-radius: 32px;
+        border: 1px solid #5F6368;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search img {
+        width: 18px;
+        height: 20px;
+        margin-right: 18px;
+    }
+    .search input {
+        width: 500px;
+        height: 39px;
+        border-radius: 4px;
+        margin-right: 8px;
+        border-style: none;
+        background-color: transparent;
+        outline: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        color: white;
+    }
+    .bar-colombia {
+        position: absolute;
+        bottom: 49px;
+        background-color: #171717;
+        width: 100%;
+        height: 48px;
+        display: flex;
+        align-items: center;
+    }
+    .bar-colombia span {
+        margin-left: 24px;
+        text-decoration: none;
+        color: #9AA0A6;
+    }
+
+    .bar-about {
+        position: absolute;
+        bottom: 0;
+        background-color: #171717;
+        width: 100%;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .bar-about ul li a {
+        text-decoration: none;
+        color: #9AA0A6;
+    }
+    .bar-right ul, .bar-left ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .bar-left ul li a {
+        display: block;
+        margin-left: 30px;
+        font-size: 14px;
+    }
+    .bar-right ul li a {
+        margin-right: 30px;
+        font-size: 14px;
+    }
+
+    .buttons button{
+        margin-top:28px;    
+        color: white;
+        background-color: #303134;
+        border-radius: 4px;
+        width: 160px;
+        border: none;
+        height: 36px;
+        margin-right: 8px;
+        font-size: 14px;
+    }
+</style>
+<body>
+    <section class="section-navbar">
+        <nav class="navbar">
+            <a href="/">Gmail</a>
+            <a href="/">Imagenes</a>
+            <button class="products">
+            <img src="https://i.ibb.co/BHp3KTQ/imagen-2021-12-20-194507.png">
+            </button>
+            <img id="profile-picture" src="https://images.pexels.com/photos/3026223/pexels-photo-3026223.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+        </nav>
+    </section>
+
+        <div class="search-logo">
+            <figure><img src="https://www.google.com/logos/doodles/2021/seasonal-holidays-2021-6753651837109324.3-ladc.gif"></figure>
+            
+            <div class="search">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png">
+            <input type="text" class="search-input">
+            </div>
+
+            <div class="buttons">
+                <button>Buscar con Google</button>
+                <button>Me siento con suerte</button>
+            </div>
+
+        </div>
+
+
+        <div class="bar-colombia"><span>Colombia</span></div>
+
+
+        <div class="bar-about">
+
+        <div class="bar-left">    
+            <ul> 
+                <li><a href="/">Sobre Google</a></li>
+                <li><a href="/">Publicidad</a></li>
+                <li><a href="/">Negocios</a></li>
+                <li><a href="/">Cómo funciona la búsqueda</a></li>
+            </ul>
+        </div>
+
+        <div class="bar-right">
+            <ul>
+                <li><a href="/">Privacidad</a></li>
+                <li><a href="/">Condiciones</a></li>
+                <li><a href="/">Preferencias</a></li>
+            </ul>
+        </div>
+
+        </div>
+</body>
+</html>
